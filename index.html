@@ -1,0 +1,244 @@
+                                                                                                                                                  <!DOCTYPE html>
+                                                                                                                                                  <html lang="en">
+                                                                                                                                                  <head>
+                                                                                                                                                      <meta charset="UTF-8">
+                                                                                                                                                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                                                                                                                      <title>Animal Shelter Adoptions</title>
+                                                                                                                                                      <link rel="preconnect" href="https://fonts.googleapis.com">
+                                                                                                                                                      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                                                                                                                                                      <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+                                                                                                                                                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                                                                                                                                                      <style>
+                                                                                                                                                          body {
+                                                                                                                                                              background-color: #ffcbdb;
+                                                                                                                                                              font-family: 'Roboto', sans-serif;
+                                                                                                                                                              margin: 0;
+                                                                                                                                                              padding: 0;
+                                                                                                                                                          }
+
+                                                                                                                                                          header {
+                                                                                                                                                              background-color: #fff;
+                                                                                                                                                              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                              padding: 20px;
+                                                                                                                                                              text-align: center;
+                                                                                                                                                          }
+
+                                                                                                                                                          nav ul {
+                                                                                                                                                              list-style-type: none;
+                                                                                                                                                              margin: 0;
+                                                                                                                                                              padding: 0;
+                                                                                                                                                          }
+
+                                                                                                                                                          nav ul li {
+                                                                                                                                                              display: inline-block;
+                                                                                                                                                              margin-right: 20px;
+                                                                                                                                                          }
+
+                                                                                                                                                          nav ul li a {
+                                                                                                                                                              color: #333;
+                                                                                                                                                              text-decoration: none;
+                                                                                                                                                              transition: color 0.3s;
+                                                                                                                                                          }
+
+                                                                                                                                                          nav ul li a:hover {
+                                                                                                                                                              color: #ff69b4;
+                                                                                                                                                          }
+
+                                                                                                                                                          .hero {
+                                                                                                                                                              position: relative;
+                                                                                                                                                              height: 600px;
+                                                                                                                                                              overflow: hidden;
+                                                                                                                                                              display: flex;
+                                                                                                                                                              justify-content: center;
+                                                                                                                                                              align-items: center;
+                                                                                                                                                          }
+
+                                                                                                                                                          #homepage-video {
+                                                                                                                                                              position: absolute;
+                                                                                                                                                              top: 0;
+                                                                                                                                                              left: 0;
+                                                                                                                                                              width: 100%;
+                                                                                                                                                              height: 100%;
+                                                                                                                                                              object-fit: cover;
+                                                                                                                                                              z-index: -1;
+                                                                                                                                                          }
+
+                                                                                                                                                          .hero-content {
+                                                                                                                                                              text-align: center;
+                                                                                                                                                              color: #fff;
+                                                                                                                                                              background-color: rgba(255, 105, 180, 0.8);
+                                                                                                                                                              padding: 30px;
+                                                                                                                                                              border-radius: 10px;
+                                                                                                                                                              max-width: 800px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .hero-content h2 {
+                                                                                                                                                              font-family: 'Pacifico', cursive;
+                                                                                                                                                              font-size: 48px;
+                                                                                                                                                              margin-bottom: 20px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .btn {
+                                                                                                                                                              background-color: #fff;
+                                                                                                                                                              color: #ff69b4;
+                                                                                                                                                              padding: 10px 20px;
+                                                                                                                                                              border-radius: 5px;
+                                                                                                                                                              text-decoration: none;
+                                                                                                                                                              transition: background-color 0.3s, color 0.3s;
+                                                                                                                                                          }
+
+                                                                                                                                                          .btn:hover {
+                                                                                                                                                              background-color: #ff69b4;
+                                                                                                                                                              color: #fff;
+                                                                                                                                                          }
+
+                                                                                                                                                          .featured {
+                                                                                                                                                              padding: 40px;
+                                                                                                                                                              background-color: #fff;
+                                                                                                                                                              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                          }
+
+                                                                                                                                                          .pet-gallery {
+                                                                                                                                                              display: flex;
+                                                                                                                                                              justify-content: space-between;
+                                                                                                                                                              flex-wrap: wrap;
+                                                                                                                                                          }
+
+                                                                                                                                                          .pet-card {
+                                                                                                                                                              width: 48%;
+                                                                                                                                                              margin-bottom: 20px;
+                                                                                                                                                              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                              border-radius: 5px;
+                                                                                                                                                              overflow: hidden;
+                                                                                                                                                              display: flex;
+                                                                                                                                                              align-items: center;
+                                                                                                                                                          }
+
+                                                                                                                                                          .pet-card img {
+                                                                                                                                                              width: 200px;
+                                                                                                                                                              height: 200px;
+                                                                                                                                                              object-fit: cover;
+                                                                                                                                                              margin-right: 20px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .pet-info {
+                                                                                                                                                              flex: 1;
+                                                                                                                                                              padding: 20px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .pet-info h3 {
+                                                                                                                                                              font-size: 24px;
+                                                                                                                                                              margin-bottom: 10px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .testimonials {
+                                                                                                                                                              padding: 40px;
+                                                                                                                                                              background-color: #f9f9f9;
+                                                                                                                                                          }
+
+                                                                                                                                                          .testimonial-container {
+                                                                                                                                                              display: flex;
+                                                                                                                                                              justify-content: center;
+                                                                                                                                                              flex-wrap: wrap;
+                                                                                                                                                          }
+
+                                                                                                                                                          .testimonial-card {
+                                                                                                                                                              width: 300px;
+                                                                                                                                                              margin: 20px;
+                                                                                                                                                              padding: 20px;
+                                                                                                                                                              background-color: #fff;
+                                                                                                                                                              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                                                                                                                                                              border-radius: 5px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .testimonial-card blockquote {
+                                                                                                                                                              font-style: italic;
+                                                                                                                                                              margin-bottom: 10px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .testimonial-card cite {
+                                                                                                                                                              font-weight: bold;
+                                                                                                                                                          }
+
+                                                                                                                                                          .cta {
+                                                                                                                                                              padding: 40px;
+                                                                                                                                                              background-color: #ff69b4;
+                                                                                                                                                              color: #fff;
+                                                                                                                                                              text-align: center;
+                                                                                                                                                          }
+
+                                                                                                                                                          .cta h2 {
+                                                                                                                                                              font-size: 36px;
+                                                                                                                                                              margin-bottom: 20px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .cta-buttons {
+                                                                                                                                                              margin-top: 20px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .cta-buttons .btn {
+                                                                                                                                                              background-color: #fff;
+                                                                                                                                                              color: #ff69b4;
+                                                                                                                                                              margin: 10px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .cta-buttons .btn:hover {
+                                                                                                                                                              background-color: #333;
+                                                                                                                                                              color: #fff;
+                                                                                                                                                          }
+                                                                                                                                                      </style>
+                                                                                                                                                  </head>
+                                                                                                                                                  <body>
+                                                                                                                                                      <header>
+                                                                                                                                                          <nav>
+                                                                                                                                                              <ul>
+                                                                                                                                                                  <li><a href="#">Home</a></li>
+                                                                                                                                                                  <li><a href="#">About</a></li>
+                                                                                                                                                                  <li><a href="content.html">Adoptions</a></li>
+                                                                                                                                                                  <li><a href="#">Get Involved</a></li>
+                                                                                                                                                                  <li><a href="#">Contact</a></li>
+                                                                                                                                                              </ul>
+                                                                                                                                                          </nav>
+                                                                                                                                                      </header>
+
+                                                                                                                                                      <main>
+                                                                                                                                                          <section class="hero">
+                                                                                                                                                              <video id="homepage-video" autoplay loop muted>
+                                                                                                                                                                  <source src="video.mp4" type="video/mp4">
+                                                                                                                                                                  Your browser does not support the video element.
+                                                                                                                                                              </video>
+                                                                                                                                                              <div class="hero-content">
+                                                                                                                                                                  <h2>Find Your Furry Companion</h2>
+                                                                                                                                                                  <p>Give a loving home to a rescued animal and experience the joy of unconditional love.</p>
+                                                                                                                                                                  <a href="content.html" class="btn">View Adoptable Pets</a>
+                                                                                                                                                              </div>
+                                                                                                                                                          </section>
+
+                                                                                                                                                          <section class="featured">
+                                                                                                                                                              <h2>Featured Pets</h2>
+                                                                                                                                                              <div class="pet-gallery">
+                                                                                                                                                                  <div class="pet-card">
+                                                                                                                                                                      <img src="doggy2.png" alt="Adoptable Dog">
+                                                                                                                                                                      <div class="pet-info">
+                                                                                                                                                                          <h3>Buddy</h3>
+                                                                                                                                                                          <p>Breed: Labrador Retriever</p>
+                                                                                                                                                                          <p>Age: 2 years</p>
+                                                                                                                                                                          <a href="content.html" class="btn">Learn More</a>
+                                                                                                                                                                      </div>
+                                                                                                                                                                  </div>
+                                                                                                                                                                  <div class="pet-card">
+                                                                                                                                                                      <img src="cat2.png" alt="Adoptable Cat">
+                                                                                                                                                                      <div class="pet-info">
+                                                                                                                                                                          <h3>Mittens</h3>
+                                                                                                                                                                          <p>Breed: Domestic Shorthair</p>
+                                                                                                                                                                          <p>Age: 1 year</p>
+                                                                                                                                                                          <a href="content.html" class="btn">Learn More</a>
+                                                                                                                                                                      </div>
+                                                                                                                                                                  </div>
+                                                                                                                                                              </div>
+                                                                                                                                                          </section>
+
+                                                                                                                                                          <section class="testimonials">
+                                                                                                                                                              <h2>What Our Adopters Say</h2>
+                                                                                                                                                              <div class="testimonial-container">
+                                                                                                                                                                  <div class="testimon
